@@ -1,5 +1,7 @@
 import task1.Outer;
 import task21.ClassWithImplementation;
+import task23.A;
+import task23.B;
 import task4.Selector;
 import task4.Sequence;
 
@@ -71,6 +73,30 @@ public class Main {
         references produced by the A objects. Use the B to call back into all the A objects. Remove
         some of the U references from the B.
          */
+
+
+        A a1 = new A();
+        A a2 = new A();
+
+        B b1 = new B();
+
+        for (int i = 0; i < 5; i++){
+            b1.add(a1.returnU());
+            b1.add(a2.returnU());
+        }
+
+        b1.setNull(5);
+        b1.setNull(3);
+
+       b1.toStringArray(b1.getUs());
+
+       /*
+       Exercise 26: (2) Create a class with an inner class that has a non-default constructor
+       (one that takes arguments). Create a second class with an inner class that inherits from the
+       first inner class.
+
+       **************************************** task26 package **************************************
+        */
 
 
 
