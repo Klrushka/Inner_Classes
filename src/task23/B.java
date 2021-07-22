@@ -14,7 +14,7 @@ public class B {
     }
 
     public void setNull(int i){
-        if (i > us.length) {
+        if (i > us.length || i < 0) {
             System.out.println("Invalid index");
         } else {
             us[i] = null;
@@ -33,7 +33,7 @@ public class B {
         for (U u1: u){
             if (u1 == null){
                 System.out.println("null");
-            } else  System.out.println(u1.toString());
+            } else  System.out.println(u1);
         }
     }
 

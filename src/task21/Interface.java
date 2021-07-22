@@ -5,14 +5,11 @@ public interface Interface {
     void method2();
     void method3();
 
-    class Inner{
+    class Nested{
         public static void methods(Interface i){
             i.method1();
             i.method2();
             i.method3();
         }
     }
-}
-class Nested {
-
 }

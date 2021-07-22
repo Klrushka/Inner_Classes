@@ -1,5 +1,6 @@
 import task1.Outer;
 import task21.ClassWithImplementation;
+import task21.Interface;
 import task23.A;
 import task23.B;
 import task4.Selector;
@@ -57,9 +58,7 @@ public class Main {
 
         ClassWithImplementation classWithImplementation = new ClassWithImplementation();
 
-        classWithImplementation.method1();
-        classWithImplementation.method2();
-        classWithImplementation.method3();
+        Interface.Nested.methods(classWithImplementation);
 
         System.out.println();
 
@@ -85,7 +84,7 @@ public class Main {
             b1.add(a2.returnU());
         }
 
-        b1.setNull(5);
+        b1.setNull(-1);
         b1.setNull(3);
 
        b1.toStringArray(b1.getUs());
