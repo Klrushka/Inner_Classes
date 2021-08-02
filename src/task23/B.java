@@ -29,8 +29,8 @@ public class B {
         }
     }
 
-    public void toStringArray(U[] u){
-        for (U u1: u){
+    public void toStringArray(){
+        for (U u1: us){
             if (u1 == null){
                 System.out.println("null");
             } else  System.out.println(u1);

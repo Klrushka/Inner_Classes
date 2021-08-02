@@ -87,7 +87,7 @@ public class Main {
         b1.setNull(-1);
         b1.setNull(3);
 
-       b1.toStringArray(b1.getUs());
+       b1.toStringArray();
 
        /*
        Exercise 26: (2) Create a class with an inner class that has a non-default constructor
